@@ -9,6 +9,7 @@ $(function() { // on document ready
 
 });
 
+
 var choices;
 
 function Game(){
@@ -26,21 +27,24 @@ Game.prototype.play = function() {
      event.preventDefault();
     _this.$humanPlayPaper.hide();
     _this.$humanPlayScissors.hide();
-    _this.computerTurn();
+    _this.$humanPlayRock.attr("disabled", true);
+    setTimeout(_this.computerTurn(), 6000);
   });
 
   this.$humanPlayPaper.on("click", function(event) {
      event.preventDefault();
     _this.$humanPlayRock.hide();
     _this.$humanPlayScissors.hide();
-    _this.computerTurn();
+    _this.$humanPlayPaper.attr("disabled", true);
+    setTimeout(_this.computerTurn(), 6000);
   });
 
   this.$humanPlayScissors.on("click", function(event) {
      event.preventDefault();
     _this.$humanPlayRock.hide();
     _this.$humanPlayPaper.hide();
-    _this.computerTurn();
+    _this.$humanPlayScissors.attr("disabled", true);
+    setTimeout(_this.computerTurn(), 6000);
   });
 };
 
@@ -48,7 +52,6 @@ Game.prototype.computerTurn = function() {
   var _this = this;
   choices = ["rock", "paper", "scissors"];
   this.computerPlay = choices[Math.floor(Math.random()*choices.length)];
-    return this.computerPlay;
     if(this.computerPlay === "rock"){
     _this.$computerPlayRock.show();
   } else if (this.computerPlay === "paper"){
