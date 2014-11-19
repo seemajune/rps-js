@@ -5,10 +5,9 @@ $(function() { // on document ready
   $('.computer-rock').hide();
   $('.computer-paper').hide();
   $('.computer-scissors').hide();
+  $('.play-again').hide();
   rpsGame.play();
-
 });
-
 
 var choices;
 
@@ -19,6 +18,7 @@ function Game(){
  this.$computerPlayRock = $('.computer-rock');
  this.$computerPlayPaper = $('.computer-paper');
  this.$computerPlayScissors = $('.computer-scissors');
+ this.$playAgain = $('.play-again');
 }
 
 Game.prototype.play = function() {
@@ -28,7 +28,9 @@ Game.prototype.play = function() {
     _this.$humanPlayPaper.hide();
     _this.$humanPlayScissors.hide();
     _this.$humanPlayRock.unbind();
-    setTimeout(_this.computerTurn(), 6000);
+    setTimeout(function() {
+      _this.computerTurn();}, 2000);
+   
   });
 
   this.$humanPlayPaper.on("click", function(event) {
@@ -36,7 +38,8 @@ Game.prototype.play = function() {
     _this.$humanPlayRock.hide();
     _this.$humanPlayScissors.hide();
     _this.$humanPlayPaper.unbind();
-    setTimeout(_this.computerTurn(), 6000);
+      setTimeout(function() {
+      _this.computerTurn();}, 2000);
   });
 
   this.$humanPlayScissors.on("click", function(event) {
@@ -44,8 +47,10 @@ Game.prototype.play = function() {
     _this.$humanPlayRock.hide();
     _this.$humanPlayPaper.hide();
     _this.$humanPlayScissors.unbind();
-    setTimeout(_this.computerTurn(), 6000);
+     setTimeout(function() {
+      _this.computerTurn();}, 2000);
   });
+
 };
 
 Game.prototype.computerTurn = function() {
@@ -59,5 +64,10 @@ Game.prototype.computerTurn = function() {
   } else if (this.computerPlay === "scissors"){
    _this.$computerPlayScissors.show();
   }
+   setTimeout(this.$playAgain.show(), 2000);
+   this.restartGame();
 };
 
+Game.prototype.restartGame = function() {
+
+};
