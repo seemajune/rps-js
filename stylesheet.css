@@ -1,0 +1,80 @@
+
+
+h1 {
+  font-family: Helvetica; 
+  color: #494949; 
+  padding-left: 100px; 
+  padding-top: 20px; 
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: Helvetica; 
+  padding-left: 180px; 
+  color: #d23232; 
+}
+
+body {
+  background-color: #F5F3EE;
+}
+
+#wrapper {
+  width: 80%;
+  margin:0 auto;
+  clear:both;
+}
+
+.container-left {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+
+.container-right {
+  width: 30%;
+  display: inline-block;
+  float: right;
+}
+
+.rock {
+  font-family: Helvetica; 
+  color: #555;
+  font-size: 2em;
+}
+
+.paper {
+  font-family: Helvetica; 
+  color: #4A96AD;
+  font-size: 2em;
+}
+
+.scissors {
+  font-family: Helvetica; 
+  color: #;
+  font-size: 2em;
+}
+
+.computer-rock {
+  font-family: Helvetica; 
+  color: #555;
+  font-size: 2em;
+}
+
+.computer-paper {
+  font-family: Helvetica; 
+  color: #4A96AD;
+  font-size: 2em;
+}
+
+.computer-scissors {
+  font-family: Helvetica; 
+  color: #;
+  font-size: 2em;
+}
+
+
+
+
+
+
+
