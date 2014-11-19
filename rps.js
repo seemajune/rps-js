@@ -27,7 +27,7 @@ Game.prototype.play = function() {
      event.preventDefault();
     _this.$humanPlayPaper.hide();
     _this.$humanPlayScissors.hide();
-    _this.$humanPlayRock.attr("disabled", true);
+    _this.$humanPlayRock.unbind();
     setTimeout(_this.computerTurn(), 6000);
   });
 
@@ -35,7 +35,7 @@ Game.prototype.play = function() {
      event.preventDefault();
     _this.$humanPlayRock.hide();
     _this.$humanPlayScissors.hide();
-    _this.$humanPlayPaper.attr("disabled", true);
+    _this.$humanPlayPaper.unbind();
     setTimeout(_this.computerTurn(), 6000);
   });
 
@@ -43,7 +43,7 @@ Game.prototype.play = function() {
      event.preventDefault();
     _this.$humanPlayRock.hide();
     _this.$humanPlayPaper.hide();
-    _this.$humanPlayScissors.attr("disabled", true);
+    _this.$humanPlayScissors.unbind();
     setTimeout(_this.computerTurn(), 6000);
   });
 };
