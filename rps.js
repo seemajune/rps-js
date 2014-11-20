@@ -65,9 +65,12 @@ Game.prototype.computerTurn = function() {
    _this.$computerPlayScissors.show();
   }
    setTimeout(this.$playAgain.show(), 2000);
-   this.restartGame();
+   this.$playAgain.on("click", function(event) {
+   event.preventDefault();
+      location.reload();
+     });
 };
 
 Game.prototype.restartGame = function() {
-
-};
+  location.reload();
+ };

@@ -1,21 +1,19 @@
-
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 h1 {
-  font-family: Helvetica; 
   color: #494949; 
-  padding-left: 100px; 
-  padding-top: 20px; 
-  padding-bottom: 10px;
+  padding: 3% 6%;
+  font-family: Raleway;
 }
 
 p {
-  font-family: Helvetica; 
-  padding-left: 180px; 
   color: #d23232; 
 }
 
 body {
   background-color: #F5F3EE;
+  font-family: Quicksand, Helvetica;
 }
 
 #wrapper {
@@ -25,58 +23,61 @@ body {
 }
 
 .container-left {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   float: left;
 }
 
 .container-right {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   float: right;
 }
 
-.rock {
-  font-family: Helvetica; 
-  color: #555;
+.rock { 
+  padding: 8%;
+  color: #d23232;
   font-size: 2em;
+  cursor: pointer;
 }
 
 .paper {
-  font-family: Helvetica; 
-  color: #4A96AD;
+  padding: 8%;
+  color: #006699;
   font-size: 2em;
+  cursor: pointer;
 }
 
 .scissors {
-  font-family: Helvetica; 
-  color: #;
+  padding: 8%;
+  color: #4A964D;
   font-size: 2em;
+  cursor: pointer;
 }
 
 .computer-rock {
-  font-family: Helvetica; 
-  color: #555;
+  padding: 10%;
+  color: #d23232;
   font-size: 2em;
 }
 
 .computer-paper {
-  font-family: Helvetica; 
-  color: #4A96AD;
+  padding: 10%;
+  color: #006699;
   font-size: 2em;
 }
 
 .computer-scissors {
-  font-family: Helvetica; 
-  color: #;
+  padding: 10%;
+  color: #4A96AD;
   font-size: 2em;
 }
 
 .play-again {
-  font-family: Helvetica; 
-  color: #;
+  color: #4A96AD;
   font-size: 1.2em;
   padding: 15%;
+  cursor: pointer;
 }
 
 
