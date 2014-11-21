@@ -5,6 +5,8 @@ h1 {
   color: #494949; 
   padding: 3% 6%;
   font-family: Raleway;
+  text-align: right;
+  font-weight: lighter;
 }
 
 p {
@@ -66,7 +68,7 @@ body {
 }
 
 .tie, .win, .lost {
-  padding: 1% 3%;
+  padding: 15%;
   color: #1E90FF;
   font-size: 2em;
 }
@@ -74,8 +76,10 @@ body {
 .play-again {
   color: #000080;
   font-size: 1.2em;
-  padding: 15%;
+  padding: 30% 15%;
   cursor: pointer;
+  margin-right: 30%;
+  display: inline-block;
 }
 
 

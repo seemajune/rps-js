@@ -78,7 +78,7 @@ Game.prototype.computerTurn = function() {
 
   this.displayOutcome();
 
-   setTimeout(this.$playAgain.show(), 1350);
+   this.$playAgain.fadeIn(4000);
    this.$playAgain.on("click", function(event) {
    event.preventDefault();
       _this.restartGame();
@@ -87,15 +87,15 @@ Game.prototype.computerTurn = function() {
 
 Game.prototype.displayOutcome = function () {
   if (this.playerSelection === this.computerSelection) {
-    $('.tie').show();
+    $('.tie').fadeIn(2000);
   } else if ( (this.playerSelection === "rock" && this.computerSelection === "scissors") ||
     (this.playerSelection === "scissors" && this.computerSelection === "paper") ||
     (this.playerSelection === "paper" && this.computerSelection === "rock") ) {
-      $('.win').show();
+      $('.win').fadeIn(2000);
   } else if ( (this.computerSelection === "rock" && this.playerSelection === "scissors") ||
     (this.computerSelection === "scissors" && this.playerSelection === "paper") ||
     (this.computerSelection === "paper" && this.playerSelection === "rock") ) {
-      $('.lost').show();
+      $('.lost').fadeIn(2000);
   }
 };
 
