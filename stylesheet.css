@@ -35,21 +35,34 @@ body {
 }
 
 .computer-rock, .rock {
-  padding: 10%;
+  padding: 20%;
   color: #d23232;
   font-size: 2em;
+  background-image: url("rock.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
 }
 
 .computer-paper, .paper {
-  padding: 10%;
+  padding: 20%;
   color: #006699;
   font-size: 2em;
+  background-image: url("paper.png");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  margin-top: 10px;
 }
 
 .computer-scissors, .scissors {
-  padding: 10%;
+  padding: 20%;
   color: #4A96AD;
   font-size: 2em;
+  background-image: url("scissors.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom-left;
+  margin-top: 25px;
+  margin-left: 2px;
 }
 
 .tie, .win, .lost {
